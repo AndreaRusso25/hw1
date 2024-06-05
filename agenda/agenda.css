@@ -1,0 +1,198 @@
+:root {
+    --pink: #ffaaff;
+    --red: #fd3158;
+    --green: rgb(72, 219, 168);
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Manrope;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+nav {
+    width: 100%;
+    background-color: var(--pink);
+    height: 80px;
+    font-size: 500;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    position: fixed;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 350;
+    font-size: 2.2rem;
+    margin: 0 2vw;
+    color: black;
+}
+
+main, footer {
+    position: relative;
+    top: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#agenda-nav {
+    text-decoration: underline;
+}
+
+.highlight {
+    color: var(--red);
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-align: center;
+    padding-top: 3vh;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.date_agenda h2 {
+    padding-bottom: 3vh;
+    text-align: center;
+}
+
+.film {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 3vw;
+    border-top: 2px solid black;
+}
+
+.film:hover {
+    background-color: #ffaaff4b;
+    cursor: pointer;
+}
+
+.film img {
+    height: 250px;
+}
+
+.film .descrizione {
+    padding-left: 3vw;
+}
+
+.room {
+    font-size: 2rem;
+}
+
+.all-agenda h2 {
+    font-size: 2rem;
+}
+
+.all-agenda .film:hover {
+    background-color: rgba(72, 219, 168, 0.274);
+}
+
+.top-bar-footer {
+    display: flex;
+    padding: 2vh;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.top-bar-footer a {
+    margin-right: 2vw;
+    font-size: larger;
+}
+
+.bottom-bar-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 2vh;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+footer a {
+    color: black;
+}
+
+footer .legal-privacy {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    text-decoration: underline;
+}
+
+footer .social img {
+    margin-right: 15px;
+}
+
+footer .social {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .logos {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+footer .logos img {
+    width: 10vw;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.dropdown {
+    position: fixed;
+    right: 0;
+    top: 80px;
+    background-color: var(--pink);
+    width: 30vw;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    display: none;
+    padding: 1vh;
+    text-align: left;
+}
+
+.dropdown a {
+    margin-bottom: 2vh;
+}
+
+#login {
+    justify-self: end;
+}
+
+@media screen and (max-width: 1000px) {
+
+    nav a{
+        font-size: 1.7rem;
+    }
+
+    body footer div.bottom-bar-footer p {
+        font-size: 1rem;
+    }
+
+}

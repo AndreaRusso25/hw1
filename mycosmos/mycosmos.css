@@ -1,0 +1,231 @@
+:root {
+    --pink: #ffaaff;
+    --red: #fd3158;
+    --green: rgb(72, 219, 168);
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Manrope;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+nav {
+    width: 100%;
+    background-color: var(--pink);
+    height: 80px;
+    font-size: 500;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    position: fixed;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 350;
+    font-size: 2.2rem;
+    margin: 0 2vw;
+    color: black;
+}
+
+main, footer, header {
+    position: relative;
+    top: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.highlight {
+    color: var(--red);
+    font-weight: bold;
+}
+
+h1 {
+    background-color: var(--pink);
+    font-size: 5rem;
+    margin: 0;
+    text-align: center;
+    padding: 3vh;
+}
+
+h2 {
+    text-align: center;
+    padding: 2vh;
+    font-size: 3rem;
+    margin: 0;
+    width: 100%;
+}
+
+header h1 {
+    border-bottom: 2px solid black;
+}
+
+.film {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 3vw;
+    border-top: 2px solid black;
+}
+
+.film:hover {
+    background-color: #ffaaff4b;
+    cursor: pointer;
+}
+
+.film img {
+    height: 250px;
+}
+
+.film .descrizione {
+    padding-left: 3vw;
+}
+
+.room {
+    font-size: 2rem;
+}
+
+.all-agenda {
+    border: 4px solid var(--red);
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    margin: auto;
+    width: 80%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+.all-agenda h2 {
+    margin: 0;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.all-agenda .film:hover {
+    background-color:#fd31561b;
+}
+
+.top-bar-footer {
+    display: flex;
+    padding: 2vh;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.top-bar-footer a {
+    margin-right: 2vw;
+    font-size: larger;
+}
+
+.bottom-bar-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 2vh;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+footer a {
+    color: black;
+}
+
+footer .legal-privacy {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    text-decoration: underline;
+}
+
+footer .social img {
+    margin-right: 15px;
+}
+
+footer .social {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .logos {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+footer .logos img {
+    width: 10vw;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.dropdown {
+    position: fixed;
+    right: 0;
+    top: 80px;
+    background-color: var(--pink);
+    width: 30vw;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    display: none;
+    padding: 1vh;
+    text-align: left;
+}
+
+.dropdown a {
+    margin-bottom: 2vh;
+}
+
+#login {
+    justify-self: end;
+}
+
+.section {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.comment {
+    text-align: center;
+    width: 95%;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 2vh;
+}
+
+.comment:hover {
+    background-color: rgba(72, 219, 168, 0.13);
+}
+
+.comment h2 {
+    border: 0;
+    border-bottom: 1px solid black;
+    padding-top: 0;
+    font-size: 2rem;
+    border-bottom-width: 1px;
+}
+
+#date {
+    margin-top: 0;
+}

@@ -1,0 +1,368 @@
+:root {
+    --pink: #ffaaff;
+    --red : #fd3158;
+    --green : rgb(72, 219, 168);
+}
+
+body {
+    margin: 0;
+    font-family: Manrope;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+nav {
+    width: 100%;
+    background-color: var(--pink);
+    height: 80px;
+    font-size: 500;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: 350;
+    font-size: 2.5rem;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#home-nav {
+    text-decoration: underline;
+}
+
+#login {
+    justify-self: end;
+}
+
+.dropdown {
+    position: fixed;
+    right: 0;
+    top: 80px;
+    background-color: var(--pink);
+    width: 30vw;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    display: none;
+    padding: 1vh;
+    text-align: left;
+}
+
+.dropdown a {
+    margin-bottom: 2vh;
+}
+
+body header {
+    display: flex;
+    flex-direction: column;
+    height: 842px;
+    overflow: hidden;
+}
+
+.showing {
+    position: relative;
+    top: 80px;
+    display: flex;
+    justify-content: end;
+    background-color: var(--pink);
+    align-items: end;
+    padding: 2vw;
+}
+
+.material-symbols-outlined {
+    color: var(--red)
+}
+
+.showing .spacer {
+    width: 40vw;
+    flex-shrink: 0;
+}
+
+.showing .theme {
+    width: 40vw;
+    margin-right: 2vw;
+    background-color: var(--pink);
+}
+
+.showing .dates {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.showing .theme-title {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.showing .theme-title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.showing .download-agenda {
+    background-color: var(--red);
+    padding: 7px;
+    width: fit-content;
+}
+
+.showing .download-agenda:hover {
+    cursor: pointer;
+    background-color: white;
+    color: var(--red);
+}
+
+.more-info {
+    display: flex;
+    align-items: center;
+    border-top: 2px solid black;;
+    border-bottom: 2px solid black;
+    height: fit-content;
+    margin-left: 2vw;
+    margin-right: 1vw;
+    flex-shrink: 0;
+}
+
+.more-info a {
+    padding: 15px;
+}
+
+.more-info a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.big-logo {
+    position: absolute;
+    top: 80px;
+    background-image: url(./img/logo-cosmos.svg);
+    background-repeat: no-repeat;
+    background-size: fill;
+    height: 762px;
+    width: 40%;
+    z-index: 1;
+}
+
+.nav-banner {
+    position: relative;
+    top: calc(80px);
+    height: 100%;
+}
+
+main h1 {
+    font-size: 7rem;
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: 90%;
+    margin: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+main .idea-cosmos {
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+}
+main .idea-cosmos .material-symbols-outlined {
+    font-size: 2.5rem;
+    margin-right: 1.5vw;
+    margin-left: 2.7vw;
+}
+
+main .idea-cosmos-description {
+    padding: 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+main .idea-cosmos-description p {
+    width: 55vw;
+    margin: 0;
+}
+
+main .this-week-showcase {
+    display: flex;
+}
+
+.this-week-showcase .img {
+    background-image: url(./img/week-showcase.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50vw;
+    flex-shrink: 0;
+}
+
+.this-week-showcase .description {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5vw;
+    flex-shrink: 0;
+    width: 47vw;
+    color: white;
+}
+
+.this-week-showcase .description .title {
+    color: black;
+    font-size: 3rem;
+    margin: 0;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.this-week-showcase .description .title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.this-week-showcase .description .material-symbols-outlined {
+    color: var(--pink);
+}
+
+.this-week-showcase .description .more-info {
+    border-color: var(--pink);
+    width: fit-content;
+    align-self: end;
+}
+
+.red-background {
+    background-color: var(--red);
+}
+.pink-background {
+    background-color: var(--pink);
+}
+
+.green-background {
+    background-color: var(--green);
+}
+
+.pink-background h2, .pink-background p, .green-background h2, .green-background p, .pink-background h3, .green-background h3 {
+    color: black;
+}
+
+.this-week-showcase .pink-background .material-symbols-outlined, .this-week-showcase .green-background .material-symbols-outlined {
+    color: var(--red);
+}
+
+.this-week-showcase .pink-background .more-info, .this-week-showcase .green-background .more-info {
+    border-color: black;
+    color: black;
+}
+
+.img-preview {
+    height: 45vh;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-image: url(./img/Smoke-sauna.jpg);
+}
+
+.green-background .img-preview {
+    background-image: url(./img/bienvenue-gattaca.jpg);
+}
+
+.top-bar-footer {
+    display: flex;
+    padding: 2vh;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.top-bar-footer  a {
+    margin-right: 2vw;
+    font-size: larger;
+}
+
+.bottom-bar-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 2vh;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+footer a {
+    color: black;
+}
+
+footer .legal-privacy {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    text-decoration: underline;
+}
+
+footer .social img {
+    margin-right: 15px;
+}
+
+footer .social {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .logos {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+footer .logos img {
+    width: 10vw;
+}
+
+body header div div.more-info a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 1000px) {
+
+    nav a{
+        font-size: 1.7rem;
+    }
+
+    body footer div.bottom-bar-footer p {
+        font-size: 1rem;
+    }
+
+
+    .big-logo {
+        display: none;
+    }
+
+    .showing {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .showing .theme {
+        width: 80%;
+    }
+
+    main h1 {
+        font-size: 4rem;
+    }
+
+}
